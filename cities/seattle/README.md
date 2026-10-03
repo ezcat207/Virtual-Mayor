@@ -1,7 +1,7 @@
 # 西雅图 (Seattle, Washington) — 市长视角城市档案
 
 > 研究日期：2026-10-03。所有数字均标注来源，详见 [sources.md](./sources.md)。不确定数字以 **[待核实]** 标记。
-> 配套文件：[urban-planning.md](./urban-planning.md)、[digital-ai.md](./digital-ai.md)
+> 配套文件：[urban-planning.md](./urban-planning.md)、[digital-ai.md](./digital-ai.md)、[fiscal.md](./fiscal.md)（财政深水区 🏷️ Muse）、[sentiment.md](./sentiment.md)（舆情 🏷️ Muse）
 
 ## 1. 城市快照 (City Snapshot)
 

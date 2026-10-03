@@ -1,7 +1,7 @@
 # 凤凰城 (Phoenix, Arizona) — 市长视角研究
 
 > 研究日期：2026-10-03。所有数字后的 [S#] 对应 `sources.md`。标 (?) 的数字为二手来源或存在口径分歧，使用前请核验。
-> 配套文件：`urban-planning.md`（规划/热/水/交通/住房）、`digital-ai.md`（数字政府与 AI）、`sources.md`、`pdfs/`。
+> 配套文件：`urban-planning.md`（规划/热/水/交通/住房）、`digital-ai.md`（数字政府与 AI）、`fiscal.md`（财政深水区 🏷️ Muse）、`sentiment.md`（舆情 🏷️ Muse）、`sources.md`、`pdfs/`。
 
 ## 1. 城市快照 (City Snapshot)
 

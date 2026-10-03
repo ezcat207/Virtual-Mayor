@@ -9,8 +9,8 @@ cities/<city>/
   README.md          城市概况 + 市长视角优先事项
   urban-planning.md  城市规划
   digital-ai.md      垂直渠道：数字化建设 & AI
-  fiscal.md          财政深水区（Muse 加的 vertical，丽水卷独有）
-  sentiment.md       社媒舆情与民生痛点（Muse 加的 vertical，丽水卷独有）
+  fiscal.md          财政深水区（Muse 加的 vertical：丽水/西雅图/凤凰城）
+  sentiment.md       社媒舆情与民生痛点（Muse 加的 vertical：丽水/西雅图/凤凰城）
   sources.md         所有资料链接与可信度
   pdfs/              下载的官方 PDF
 interviews/          市长采访题（MD），按城市
@@ -23,7 +23,7 @@ market-research/     竞品、学习方法、商业路径（目标：年收入 $
 - [杭州 Hangzhou](cities/hangzhou/README.md)
 - [凤凰城 Phoenix](cities/phoenix/README.md)
 - [西雅图 Seattle](cities/seattle/README.md)
-- [丽水 Lishui](cities/lishui/README.md) 🏷️ Muse · [Claude 版](cities/lishui/README-claude.md) · [采访题](interviews/lishui.md)
+- [丽水 Lishui](cities/lishui/README.md) 🏷️ Muse
 
 ## 路线
 1. 调研四城（进行中）
