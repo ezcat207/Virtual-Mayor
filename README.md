@@ -19,9 +19,10 @@ market-research/     竞品、学习方法、商业路径（目标：年收入 $
 - [杭州 Hangzhou](cities/hangzhou/README.md)
 - [凤凰城 Phoenix](cities/phoenix/README.md)
 - [西雅图 Seattle](cities/seattle/README.md)
+- [浙江丽水 Lishui](cities/lishui/README.md)
 
 ## 路线
-1. 调研三城（进行中）
+1. 调研四城（杭州、凤凰城、西雅图、丽水）已完成初稿
 2. 生成"新市长采访"题库 → `interviews/`
 3. 竞品与商业路径 → `market-research/`
 4. 选定一个具体人群验证付费（见 market-research/business-paths.md）
