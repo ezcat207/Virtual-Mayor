@@ -1,0 +1,29 @@
+# Virtual Mayor 虚拟市长
+
+模拟作为新上任的市长，基于你去过/了解的城市，深度理解城市规划与城市数字化 / AI（含"人民 AI"——面向市民的 AI 应用）。
+
+## 结构
+
+```
+cities/<city>/
+  README.md          城市概况 + 市长视角优先事项
+  urban-planning.md  城市规划
+  digital-ai.md      垂直渠道：数字化建设 & AI
+  sources.md         所有资料链接与可信度
+  pdfs/              下载的官方 PDF
+interviews/          市长采访题（MD），按城市
+market-research/     竞品、学习方法、商业路径（目标：年收入 $1M）
+```
+
+## 当前城市
+- [杭州 Hangzhou](cities/hangzhou/README.md)
+- [凤凰城 Phoenix](cities/phoenix/README.md)
+- [西雅图 Seattle](cities/seattle/README.md)
+
+## 路线
+1. 调研三城（进行中）
+2. 生成"新市长采访"题库 → `interviews/`
+3. 竞品与商业路径 → `market-research/`
+4. 选定一个具体人群验证付费（见 market-research/business-paths.md）
+
+> 数据均附来源链接；不确定数字已标注。
