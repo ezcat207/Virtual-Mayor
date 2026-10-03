@@ -19,6 +19,10 @@ market-research/     竞品、学习方法、商业路径（目标：年收入 $
 
 > 作者标签：`🏷️ Muse` = Muse 调研；无标签 = Claude Code 调研。
 
+## 可视化
+
+**Visual Board**：https://ezcat207.github.io/Virtual-Mayor/ — 四城市长简报、财政对比、市长注意力地图与创业借力点（静态站，源码在 `/docs`）。
+
 ## 当前城市
 - [杭州 Hangzhou](cities/hangzhou/README.md)
 - [凤凰城 Phoenix](cities/phoenix/README.md)

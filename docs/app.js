@@ -5,6 +5,19 @@ const CITIES = {
 hangzhou: {
   name:'杭州', en:'Hangzhou, China · 副省级省会',
   tags:['Claude Code'], verdict:'AI+ 先发优势，财政紧平衡：2026 年预算收入目标仅 +2%，土地出让下滑，债务≈预算收入 1.9 倍。',
+  attention:[
+    {area:'AI+ 与六小龙',level:5,why:'城市品牌 + 税基未来',evidence:'数字经济6780亿占GDP 29.5%；具身智能条例全国首部；市长Top优先级#1'},
+    {area:'土地财政软着陆',level:5,why:'财政生存',evidence:'市本级基金收入863亿→635亿（-26%）；2026年预算收入目标仅+2%'},
+    {area:'人才流入与留存',level:4,why:'长期税基',evidence:'每年35-43万大学生流入；常住人口+7.6万'},
+    {area:'城市大脑 3.0',level:4,why:'治理政绩',evidence:'应用320个、用户1981万；要办件时长等可感知指标'},
+    {area:'通勤与都市圈',level:3,why:'民生体感',evidence:'地铁四期2026年底9、10号线二期通车；运营里程516km'}
+  ],
+  leverage:[
+    {opp:'AI 政务智能体',mapsTo:'城市大脑 3.0',fit:'高',logic:'场景即市场：320个应用、1981万用户，市长要的是可感知的获得感',risk:'采购周期长；补贴退坡后付费能力待验证'},
+    {opp:'具身智能应用层',mapsTo:'AI+ 与六小龙',fit:'高',logic:'不做本体做场景：条例+三镇一港产业空间，应用公司吃政策红利',risk:'大厂挤压；IPO后总部是否留杭影响生态'},
+    {opp:'数据标注与语料服务',mapsTo:'AI+ 与六小龙',fit:'中',logic:'数据交易所+算力券/模型券/语料券补贴，需求真实存在',risk:'低附加值锁定；价格战'},
+    {opp:'大学生就业服务',mapsTo:'人才流入与留存',fit:'中',logic:'流入大、留存难是市长心病，服务缺口明显',risk:'C端付费弱，主要靠政府/高校买单'}
+  ],
   stats:[['1270.0万','常住人口（+7.6万）'],['23011亿','GDP（+5.2%）'],['2693.2亿','预算收入（+2.0%）'],['5089.8亿','政府债务余额']],
   tabs:{
     briefing:{title:'市长简报',sections:[
@@ -37,6 +50,19 @@ hangzhou: {
 phoenix: {
   name:'凤凰城', en:'Phoenix, Arizona, USA · 议会-经理制',
   tags:['Claude Code','🏷️ Muse'], verdict:'财政纪律在线，但35%收入捏在州议会手里，养老金$50亿UAAL是长期负债；舆情的火是水和热。',
+  attention:[
+    {area:'水安全',level:5,why:'城市存续',evidence:'科罗拉多河供水约40%；联邦10年削减计划2026-08出台；民调第一关切是水费'},
+    {area:'极端高温',level:5,why:'人命 + 民生',evidence:'2025年Maricopa County约430例热相关死亡；Shade Phoenix计划$6000万/5年'},
+    {area:'住房可负担',level:4,why:'民生压力',evidence:'64,000+套住房中仅约22%可负担；住房信托基金仅$3.5M'},
+    {area:'财政纪律',level:4,why:'市长承诺',evidence:'三年内避免新增永久性支出；州政策两年已冲击-$140M'},
+    {area:'TSMC 半导体生态',level:3,why:'经济名片',evidence:'总承诺$265B、规划12座厂；但对一般基金直接贡献有限'}
+  ],
+  leverage:[
+    {opp:'智慧水务（智能水表/漏损检测）',mapsTo:'水安全',fit:'高',logic:'Pure Water Phoenix投资$3亿；水费上涨期节水=省钱，付费意愿最强',risk:'公用事业采购慢；需过认证'},
+    {opp:'降温技术（反射涂层/遮阳结构）',mapsTo:'极端高温',fit:'高',logic:'Cool Corridors试点+Shade计划$6000万，政府是现成甲方',risk:'效果验证周期长'},
+    {opp:'住宅建造降本技术',mapsTo:'住房可负担',fit:'中',logic:'5万套目标达成但缺可负担，降本技术对开发商有吸引力',risk:'建筑行业保守，推广慢'},
+    {opp:'半导体本地配套服务',mapsTo:'TSMC 半导体生态',fit:'中',logic:'12座厂的供应链本地化缺口：物流、维保、人力服务',risk:'大厂账期长；直面现有供应商竞争'}
+  ],
   stats:[['166.5万','人口（全美第5）'],['$2.19B','FY2025-26一般基金'],['35%','收入依赖州共享'],['$37.2亿','PSPRS养老金缺口']],
   tabs:{
     briefing:{title:'市长简报',sections:[
@@ -71,6 +97,19 @@ phoenix: {
 seattle: {
   name:'西雅图', en:'Seattle, Washington, USA · 强市长制',
   tags:['Claude Code','🏷️ Muse'], verdict:'富城市的穷税基：债务空间充裕，但税基绑在少数科技巨头身上，增收工具已用尽；舆情的火是治安体感。',
+  attention:[
+    {area:'公共安全体感',level:5,why:'政治生命线',evidence:'市长好感度57%→37%（4个月）；recall请愿已提交；可部署巡警仅约864人'},
+    {area:'无家可归结果问责',level:4,why:'舆情焦点',evidence:'PIT 18,365人（+9%），露宿+21%；政策从买床位转向结果问责'},
+    {area:'许可提速',level:4,why:'市长运营指标',evidence:'SDCI许可量较2019年-60%；许可储备从$80-100M崩到$30M'},
+    {area:'JumpStart 与税基',level:4,why:'财政命脉',evidence:'前10大公司贡献约70%；Amazon岗位西雅图-10,000/Bellevue+12,000'},
+    {area:'市中心复苏',level:3,why:'经济面子',evidence:'空置率约37%全美最差；一年流失13,000个岗位'}
+  ],
+  leverage:[
+    {opp:'Permit-tech（许可预审/流程SaaS）',mapsTo:'许可提速',fit:'高',logic:'市长把SDCI许可时间当第一运营指标；SDCI已在试点4个审图AI，场景已开',risk:'政府采购流程长；工会与数据合规'},
+    {opp:'公共安全数据透明度工具',mapsTo:'公共安全体感',fit:'中',logic:'NYU审计+38家企业联名，数据叙事有市场，帮市府自证清白',risk:'政治敏感；监控伦理争议'},
+    {opp:'Downtown 空间活化运营',mapsTo:'市中心复苏',fit:'中',logic:'空置37%全美最差，业主急需方案，快闪/混合空间有议价权',risk:'治安体感不改善则流量起不来'},
+    {opp:'无家可归服务效果追踪',mapsTo:'无家可归结果问责',fit:'中',logic:'问责时代效果数据值钱，非营利组织+政府都需要',risk:'数据获取难；付费方分散'}
+  ],
   stats:[['81.7万','人口（+2.4%，首破80万）'],['$2.02B','FY2026一般基金'],['$175M','$488M','FY2027缺口/三年累计'],['$929M','GO债务（上限$75亿）']],
   tabs:{
     briefing:{title:'市长简报',sections:[
@@ -105,6 +144,19 @@ seattle: {
 lishui: {
   name:'丽水', en:'Lishui, Zhejiang, China · 生态试点市',
   tags:['🏷️ Muse'], verdict:'生态优等生、财政困难生：GDP增速全省第二，但自给率仅32%、债务顶格、土地财政暴露。',
+  attention:[
+    {area:'债务到期兑付',level:5,why:'财政生存',evidence:'2025年到期还本90.89亿，约占预算收入46%；债务限额基本顶格'},
+    {area:'生态产品价值实现',level:4,why:'全国试点招牌',evidence:'全国首个试点市；GDP/GEP双核算双考核全国独有'},
+    {area:'旅游康养变现',level:4,why:'现金流最快',evidence:'机场2025-07-18通航；十五五GDP破3000亿目标'},
+    {area:'AI 应用示范',level:3,why:'政策生态位',evidence:'山区县AI应用示范；市级规划仍是征求意见稿，窗口期'},
+    {area:'城市存在感',level:3,why:'招商前提',evidence:'被浙江遗忘是跨平台共识；农民增收17连冠是现成故事'}
+  ],
+  leverage:[
+    {opp:'碳汇与生态数据服务',mapsTo:'生态产品价值实现',fit:'中',logic:'全国独有双考核，方法学和数据服务可向外输出',risk:'碳汇交易仅26.37万，市场极早期'},
+    {opp:'康养旅居产品',mapsTo:'旅游康养变现',fit:'高',logic:'机场通航+生态全省第一，流量变过夜消费是市长KPI',risk:'季节性强；需本地运营伙伴'},
+    {opp:'数据标注基地',mapsTo:'AI 应用示范',fit:'中',logic:'百度智能云丽水基地已有，成本洼地+就业蓄水池',risk:'低附加值锁定'},
+    {opp:'政策资金项目包装',mapsTo:'债务到期兑付',fit:'中',logic:'560亿政策资金要变成项目，帮政府把输血变造血',risk:'回款依赖财政，账期风险'}
+  ],
   stats:[['253.9万','常住人口（+0.7万）'],['2301.4亿','GDP（+6.4%）'],['198.0亿','预算收入（+2.5%）'],['32.1%','财政自给率']],
   tabs:{
     briefing:{title:'市长简报',sections:[
@@ -170,25 +222,55 @@ function renderHome(){
   document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.nav==='home'));
   app.innerHTML =
     '<div class="hero"><h1>当一天市长，<em>先看清这座城</em></h1>'+
-    '<p>Virtual Mayor 虚拟市长调研的可视化：四座城市的财政家底、AI 布局与社媒舆情，全部站在市长视角写成。点一张卡片进去看完整简报。</p></div>'+
+    '<p>Virtual Mayor 虚拟市长调研的可视化：四座城市的财政家底、AI 布局与社媒舆情，全部站在市长视角写成。点一张卡片进去看完整简报，含市长注意力地图与创业借力点。</p></div>'+
     '<div class="cards">'+Object.keys(CITIES).map(id=>{const c=CITIES[id];
       return '<div class="card"><h2>'+esc(c.name)+'</h2><div class="en">'+esc(c.en)+'</div>'+tagHtml(c.tags)+
       '<div class="stat-grid">'+c.stats.map(s=>'<div class="stat"><b>'+esc(s[0])+'</b><span>'+esc(s[1])+'</span></div>').join('')+'</div>'+
       '<div class="verdict">'+esc(c.verdict)+'</div>'+
       '<a class="go" href="#/city/'+id+'">进入简报 →</a></div>'}).join('')+'</div>';
 }
+
+const XTABS={attention:'注意力地图',leverage:'创业借力'};
+function attentionHtml(c){
+  return '<h3>市长注意力地图</h3><p style="font-size:13px;color:var(--muted)">按注意力强度排序，证据来自各城市调研文档（财政/舆情/市长优先级）。</p>'+
+  c.attention.map((a,i)=>'<div style="margin:14px 0"><div style="display:flex;justify-content:space-between;gap:10px;font-size:14px;flex-wrap:wrap"><b>'+(i+1)+'. '+esc(a.area)+'</b><span style="color:var(--muted);font-size:12.5px">'+esc(a.why)+'</span></div>'+
+  '<div style="background:#e9e4d8;border-radius:6px;height:8px;margin-top:6px"><div style="width:'+(a.level*20)+'%;background:var(--accent);height:8px;border-radius:6px"></div></div>'+
+  '<div style="font-size:13px;color:var(--muted);margin-top:4px">'+esc(a.evidence)+'</div></div>').join('')+
+  '<div class="note">注意力强度为研究者按文档证据的定性判断（1-5）。</div>';
+}
+function leverageHtml(c){
+  return '<h3>创业借力点</h3><p style="font-size:13px;color:var(--muted)">机会如何契合市长注意力：顺着城市议程借力，而不是逆着卖方案。</p>'+
+  '<div class="cmp-scroll"><table class="cmp"><thead><tr><th>机会</th><th>对接注意力</th><th>契合度</th><th>借力逻辑</th><th>风险</th></tr></thead><tbody>'+
+  c.leverage.map(l=>'<tr><td><b>'+esc(l.opp)+'</b></td><td>'+esc(l.mapsTo)+'</td><td>'+esc(l.fit)+'</td><td>'+esc(l.logic)+'</td><td>'+esc(l.risk)+'</td></tr>').join('')+
+  '</tbody></table></div><div class="note">契合度为定性判断，非投资建议。</div>';
+}
+function renderLeverageIndex(){
+  document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.nav==='leverage'));
+  let rows='';
+  Object.keys(CITIES).forEach(id=>{const c=CITIES[id];
+    c.leverage.forEach(l=>{rows+='<tr><td><b>'+esc(c.name)+'</b></td><td>'+esc(l.mapsTo)+'</td><td><b>'+esc(l.opp)+'</b></td><td>'+esc(l.fit)+'</td><td>'+esc(l.logic)+'</td></tr>';});
+  });
+  app.innerHTML='<div class="hero"><h1>创业 <em>借力总览</em></h1><p>以市长注意力为坐标：机会顺着城市议程走，才能借到力。每行一个借力点。</p></div>'+
+  '<div class="cmp-scroll"><table class="cmp"><thead><tr><th>城市</th><th>对接的注意力</th><th>借力机会</th><th>契合度</th><th>为什么契合</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+
+  '<div class="note">借力逻辑来自各城市调研文档；契合度为定性判断，非投资建议。</div><div style="margin-bottom:46px"></div>';
+}
+
 function renderCity(id,tab){
   const c=CITIES[id]; if(!c){location.hash='#/';return}
   document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.nav==='home'));
-  const tabs=Object.keys(c.tabs).filter(k=>!k.endsWith('_note')); tab=tabs.includes(tab)?tab:tabs[0];
-  const t=c.tabs[tab];
+  const tabs=[...Object.keys(c.tabs).filter(k=>!k.endsWith('_note')),'attention','leverage'];
+  tab=tabs.includes(tab)?tab:tabs[0];
+  const title=k=>c.tabs[k]?c.tabs[k].title:XTABS[k];
+  let body='';
+  if(tab==='attention') body=attentionHtml(c);
+  else if(tab==='leverage') body=leverageHtml(c);
+  else {const t=c.tabs[tab]; body=t.sections.map(sectionHtml).join('')+(c.tabs[tab+'_note']?'<div class="note">'+esc(c.tabs[tab+'_note'])+'</div>':'');}
   app.innerHTML =
     '<a class="back" href="#/">← 返回城市列表</a>'+
     '<div class="city-head"><h1>'+esc(c.name)+' <span class="en">'+esc(c.en)+'</span></h1>'+tagHtml(c.tags)+
     '<div class="verdict" style="max-width:720px">'+esc(c.verdict)+'</div></div>'+
-    '<div class="tabs">'+tabs.map(k=>'<a class="tab'+(k===tab?' active':'')+'" href="#/city/'+id+'/'+k+'">'+esc(c.tabs[k].title)+'</a>').join('')+'</div>'+
-    '<div class="panel">'+t.sections.map(sectionHtml).join('')+
-    (c.tabs[tab+'_note']?'<div class="note">'+esc(c.tabs[tab+'_note'])+'</div>':'')+'</div>';
+    '<div class="tabs">'+tabs.map(k=>'<a class="tab'+(k===tab?' active':'')+'" href="#/city/'+id+'/'+k+'">'+esc(title(k))+'</a>').join('')+'</div>'+
+    '<div class="panel">'+body+'</div>';
 }
 function renderCompare(){
   document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.dataset.nav==='compare'));
@@ -210,6 +292,7 @@ function route(){
   const h=location.hash||'#/';
   const m=h.match(/^#\/city\/(\w+)(?:\/(\w+))?/);
   if(m) renderCity(m[1],m[2]);
+  else if(h==='#/leverage') renderLeverageIndex();
   else if(h==='#/compare') renderCompare();
   else if(h==='#/about') renderAbout();
   else renderHome();
