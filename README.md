@@ -9,20 +9,24 @@ cities/<city>/
   README.md          城市概况 + 市长视角优先事项
   urban-planning.md  城市规划
   digital-ai.md      垂直渠道：数字化建设 & AI
+  fiscal.md          财政深水区（Muse 加的 vertical，丽水卷独有）
+  sentiment.md       社媒舆情与民生痛点（Muse 加的 vertical，丽水卷独有）
   sources.md         所有资料链接与可信度
   pdfs/              下载的官方 PDF
 interviews/          市长采访题（MD），按城市
 market-research/     竞品、学习方法、商业路径（目标：年收入 $1M）
 ```
 
+> 作者标签：`🏷️ Muse` = Muse 调研；无标签 = Claude Code 调研。
+
 ## 当前城市
 - [杭州 Hangzhou](cities/hangzhou/README.md)
 - [凤凰城 Phoenix](cities/phoenix/README.md)
 - [西雅图 Seattle](cities/seattle/README.md)
-- [浙江丽水 Lishui](cities/lishui/README.md)
+- [丽水 Lishui](cities/lishui/README.md) 🏷️ Muse · [Claude 版](cities/lishui/README-claude.md) · [采访题](interviews/lishui.md)
 
 ## 路线
-1. 调研四城（杭州、凤凰城、西雅图、丽水）已完成初稿
+1. 调研四城（进行中）
 2. 生成"新市长采访"题库 → `interviews/`
 3. 竞品与商业路径 → `market-research/`
 4. 选定一个具体人群验证付费（见 market-research/business-paths.md）
