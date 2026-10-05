@@ -36,3 +36,5 @@ market-research/     竞品、学习方法、商业路径（目标：年收入 $
 4. 选定一个具体人群验证付费（见 market-research/business-paths.md）
 
 > 数据均附来源链接；不确定数字已标注。
+
+**World 报告网页**：https://ezcat207.github.io/Virtual-Mayor/world/

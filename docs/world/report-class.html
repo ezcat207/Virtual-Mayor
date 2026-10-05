@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>谁是敌人，谁是朋友：AI 时代的阶级分析</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1a;--mut:#6b6b64;--card:#fff;--line:#e3e1d8;--acc:#b4412b;--ok:#2f7d4f;--warn:#b7791f;--en:#a3361f;--fr:#2f7d4f;--sw:#b7791f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161614;--fg:#ecebe4;--mut:#a09f96;--card:#1f1f1c;--line:#34332e;--acc:#e0765d;--ok:#5ab97f;--warn:#e0b04a;--en:#e0765d;--fr:#5ab97f;--sw:#e0b04a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"PingFang SC","Noto Sans SC",sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:1.7rem;margin:.2em 0}h2{font-size:1.3rem;margin:2.2em 0 .6em;border-top:2px solid var(--fg);padding-top:.7em}h3{font-size:1.05rem;margin:1.4em 0 .4em}
+.sub,.src{color:var(--mut)}.src{font-size:.82rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.tl{border-left:4px solid var(--acc)}.warn{border-left:4px solid var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:.88rem;margin:10px 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--card);white-space:nowrap;position:sticky;top:0}
+.tag{display:inline-block;font-size:.72rem;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin-left:4px;white-space:nowrap}
+.hi{color:var(--ok);border-color:var(--ok)}.med{color:var(--warn);border-color:var(--warn)}.lo{color:var(--acc);border-color:var(--acc)}
+.e{background:color-mix(in srgb,var(--en) 22%,transparent);font-weight:600}
+.f{background:color-mix(in srgb,var(--fr) 22%,transparent);font-weight:600}
+.s{background:color-mix(in srgb,var(--sw) 20%,transparent)}
+.legend span{display:inline-block;padding:2px 10px;margin:2px 6px 2px 0;border-radius:4px;font-size:.82rem}
+ul{padding-left:1.2em}a{color:var(--acc)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:640px){.ba{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<h1>谁是敌人，谁是朋友：资本全球化与 AI 时代的阶级分析</h1>
+<p class="sub">仿毛泽东《中国社会各阶级的分析》（页面标注 1925-12-01，[K-01]）· 截至 2026-10 · 回指 <code>World/09、10、11</code> 与 <code>sources/</code>。上一版总览：<a href="report.html">report.html</a>。</p>
+
+<div class="card tl">
+<b>一句话：</b>原文的两步法——先看经济地位，再看对"革命"的态度——被换成四个可检验的议题：<b>数据权益、使用价格、劳动条件、工资</b>（另加外部性）。结果：证据最厚、最稳的"敌"是<b>外包与转包链条</b>（不是前沿实验室本身），最稳定的"友"是<b>下三层</b>（半无产、无产、小资产阶级左翼）。AI 给低收入者增收的<b>独立证据仍然稀少</b>，最硬的"小钱"来自制度（EITC、免费报税、里程扣除），不是 AI 副业。
+</div>
+<div class="card warn">本框架是<b>分析工具，不是行动指南</b>；"买办"等词是借用原文的修辞。撰写者是 Anthropic 的模型，而 Anthropic 属于文中的前沿实验室一类，请带着这个背景读。</div>
+
+<h2>1. 全球化的底图：AI 之前与之后</h2>
+<div class="ba">
+<div class="card"><h3>AI 之前（约 1990–2020）：外包、平台、金融</h3>
+<ul>
+<li>价值链占全球贸易约 52%（2008 年峰值）[K-03]</li>
+<li>中国占全球制造业增加值约 26%–28% [K-28]</li>
+<li>美国 1999–2011 年因中国进口竞争减少约 98.5 万个制造业岗位，全经济上界约 200 万 [K-29]</li>
+<li>劳动收入占比 2004→2024 年约 54%→52.3%，2024 年相当于 2.4 万亿美元缺口 [K-05]</li>
+<li>在线零工 1.54–4.35 亿人 [K-04]；全球非正规就业约 58% [K-06]</li>
+</ul></div>
+<div class="card"><h3>AI 之后（2023–2026）：三个新卡口</h3>
+<ul>
+<li>算力、模型、数据集中：美国四大云 2026 年资本开支约 $7,200–7,450 亿；中国四大约 $1,020 亿（低可信）[K-31][K-32]</li>
+<li>七巨头约占标普 500 的 1/3 [K-33]</li>
+<li>入口岗位被压缩：22–25 岁高暴露岗位相对就业 -16%（2025-11）→ -19%（2026-08），因果未证 [N-02][N-03]</li>
+<li>新外包链：肯尼亚为中国项目标注，日薪约 $5.42、每天约 12 小时（仅 10 人访谈）[K-16]</li>
+</ul></div>
+</div>
+<p class="src">口径：数字冲突并列在 09 §7（共 8 项）。AI 对工资和总就业的已实现冲击目前很小（丹麦研究、Acemoglu），"榨取"更多发生在预期、资本市场和数据劳动链条里。</p>
+
+<h2>2. 七个类别（加一类"食利层"）与 AI 的关系</h2>
+<table>
+<tr><th>类别（对应毛文）</th><th>是谁（今天）</th><th>与 AI 的关系</th></tr>
+<tr><td>国际资产阶级</td><td>前沿实验室、超大规模云、芯片、风投、大平台所有者</td><td>拥有</td></tr>
+<tr><td>食利层（我们新增，对应"地主"；低置信）</td><td>内容/版权库持有者；数据中心土地与电力接入的受益者</td><td>收租</td></tr>
+<tr><td>买办/依附阶层</td><td>外包商、BPO、标注供应商、本地集成商</td><td>卖给</td></tr>
+<tr><td>民族/中产资产阶级</td><td>国家冠军、中型企业、中国实验室、SaaS、小制造业</td><td>必须采用</td></tr>
+<tr><td>小资产阶级（右/中/左）</td><td>自雇、小店主、创作者、教师、初级程序员、译者、插画师</td><td>使用且分化</td></tr>
+<tr><td>半无产阶级</td><td>零工、计件标注员、店员、摊贩、平台依赖卖家</td><td>被算法管理</td></tr>
+<tr><td>无产阶级</td><td>工厂、仓储、物流、护理与服务</td><td>被机器与算法夹击</td></tr>
+<tr><td>游民/不稳定者</td><td>非正规、无证、灰产、"AI 副业"贩卖者与受害者</td><td>边缘/卷入诈骗经济</td></tr>
+</table>
+<ul>
+<li><b>最大的"动摇阶级"是中等资本</b>：一边被前沿实验室挤压（软件指数 2025-10→2026-04 约 -36%；菲律宾 IBPAP 把 2028 年收入目标从 $590 亿下调到 $433–505 亿），一边继续压缩自己的工人（TCS 约 12,200 人）。证据只到"受挤压+裁员"，没有到"政治表态"。<span class="tag med">推论</span></li>
+<li><b>小资产阶级三分最有解释力</b>：左翼（初级白领、译者、插画师）生活下降——写作类自由职业者月收入 -5.2%；中国游戏插画师岗位据称 -70%（单一招聘人士，低可信）。</li>
+<li><b>舆论位置与经济位置错开</b>：认为 AI 利大于弊的比例，中国 83%、美国 39%；美国"更担忧"50%→52%。反映"谁承担风险、谁在追赶"，未必是文化差别。</li>
+</ul>
+
+<h2>3. 敌友总表（按议题）</h2>
+<div class="legend"><span class="e">敌</span><span class="e" style="font-weight:400">对手</span><span class="s">摇摆</span><span class="f">友 / 潜在盟友</span></div>
+<table>
+<tr><th>类别</th><th>A 数据权益</th><th>B 接入与价格</th><th>C 劳动条件</th><th>D 工资</th><th>E 外部性</th></tr>
+<tr><td>国际资产阶级</td><td class="e">对手</td><td class="f">暂时盟友</td><td class="e">对手（连带）</td><td class="s">摇摆/对手</td><td class="e">对手</td></tr>
+<tr><td>食利层</td><td class="s">对手/摇摆</td><td class="e">对手</td><td>中性</td><td>中性</td><td class="s">对手/摇摆</td></tr>
+<tr><td>依附/买办（外包、转包链）</td><td class="e">对手</td><td>中性</td><td class="e">敌（证据最强）</td><td class="e">敌</td><td>中性</td></tr>
+<tr><td>民族/中产资产阶级</td><td class="s">对手/摇摆</td><td class="f">友/摇摆</td><td class="s">摇摆</td><td class="s">摇摆/对手</td><td class="s">摇摆</td></tr>
+<tr><td>小资产·右</td><td class="s">摇摆</td><td class="f">友</td><td class="s">摇摆</td><td class="s">摇摆</td><td>中立</td></tr>
+<tr><td>小资产·中</td><td>中立</td><td class="f">潜在盟友</td><td>中立</td><td class="f">潜在盟友</td><td>中立</td></tr>
+<tr><td>小资产·左</td><td class="f">友</td><td class="s">摇摆</td><td class="f">友</td><td class="f">友</td><td>中立</td></tr>
+<tr><td>半无产阶级</td><td class="f">友（无通道）</td><td>受益方</td><td class="f">友（最接近）</td><td class="f">友（最接近）</td><td>受害者</td></tr>
+<tr><td>无产阶级</td><td class="f">友（被忽略）</td><td>受益但使用不平等</td><td class="f">友（核心）</td><td class="f">友（核心）</td><td>受害者（紧邻者）</td></tr>
+<tr><td>游民/不稳定者</td><td colspan="5">分裂：受害者与加害者并存</td></tr>
+</table>
+<p class="src">这是我们的判断 <code>#inference</code>：C 轴证据最厚，A、E 轴最薄。没有哪一类在五个议题上一致。单行的"友"不等于"可联合"，要看组织条件。</p>
+
+<h3>可以团结的五个联盟（按议题成立，不按身份）</h3>
+<table>
+<tr><th>联盟</th><th>谁</th><th>共同利益</th><th>障碍</th></tr>
+<tr><td>1 数据与内容劳动者</td><td>肯尼亚/菲律宾/中国县域标注员 + 被压缩的创作者/译者 + 工会</td><td>价差透明、署名授权、付款保障</td><td>跨国难；"严格授权"与"便宜开放"在价格轴上有张力</td></tr>
+<tr><td>2 算法管理下的劳动者</td><td>骑手、网约车司机、仓库/零售工人、福利申请者</td><td>排班与配额透明、人工复核、工伤社保</td><td>流动、原子化、身份不同</td></tr>
+<tr><td>3 数据中心所在社区</td><td>孟菲斯、克雷塔罗、蒙得维的亚等 + 环保民权组织</td><td>许可、排放、用水披露、电费分摊</td><td>地方依赖补贴；电费归因有争议（PJM）</td></tr>
+<tr><td>4 接入与价格</td><td>开放权重社区 + 中等资本 + 低收入使用者 + 图书馆/社区学院</td><td>开放、本地语言、公共选项 AI</td><td>开放权重同样用未授权数据；地缘风险</td></tr>
+<tr><td>5 入口岗位保护</td><td>应届生、初级白领 + 教育机构 + 愿保留学徒岗的企业</td><td>入口岗位</td><td>因果未证；企业自身在降本</td></tr>
+</table>
+<p>最好的杠杆不是版权诉讼，而是<b>采购条款、转包透明度、工资下限、公共选项</b>；联盟 1、2 的切入点是"砍掉中间层、价差透明"。<span class="tag med">推论</span></p>
+
+<h2>4. 他们在哪里聚集（已核实部分 + 缺口）</h2>
+<div class="card warn">Reddit 页面仍然挡住我们的工具，规则来自 Wayback 存档快照（2024-11 至 2026-08），不是今天的页面；<b>发帖前必须重读规则</b>。多数中国、凤凰城、丽水的事实只来自搜索摘要（中/低可信度）。</div>
+<h3>Reddit：能不能做调查？（规则已读）</h3>
+<table>
+<tr><th>版块</th><th>规模（Reddit 自己的数）</th><th>对调查/研究的规则</th></tr>
+<tr><td>r/doordash_drivers</td><td>422,014（2026-05）</td><td class="e">禁止问卷和人口统计请求</td></tr>
+<tr><td>r/uberdrivers</td><td>431,261（2025-07）</td><td class="s">需买 Reddit 广告；版主偶尔批准问卷</td></tr>
+<tr><td>r/InstacartShoppers</td><td>198,302（2024-12）</td><td class="e">问卷/研究/访谈列为垃圾信息</td></tr>
+<tr><td>r/Frugal</td><td>—</td><td class="e">首次违规即永久封禁</td></tr>
+<tr><td>r/povertyfinance</td><td>—</td><td class="s">无研究规则，但禁止募捐和众筹</td></tr>
+<tr><td>r/beermoney</td><td>—</td><td class="s">警告陌生私信</td></tr>
+<tr><td>r/DataAnnotationTech</td><td>—</td><td>禁止发项目细节；其规则全文未读</td></tr>
+</table>
+<p class="src">另外 r/Assistance、r/Flipping、r/AmazonFC 的规则也已读；r/Etsy、r/DataAnnotationTech 的侧栏快照为空，r/WorkReform 只看到"禁止数据收集"的标题。其余约 35 个版块的成员数来自第三方统计站（gummysearch），与 Reddit 官方数没有对账。</p>
+<p><b>结论：</b>在 Reddit 上"贴问卷找人"在最该去的几个版块基本走不通。可行的是：先联系版主、说明身份；以"倾听"为主，不发问卷；或通过线下组织和司机/外卖员协会找人。</p>
+
+<h3>中国：规模与规则</h3>
+<ul>
+<li>规模：微信月活 14.39 亿；快手日活 4.12 亿；B站日活 1.165 亿（公司 2026 Q2 业绩，仅摘要）；小红书 3.5 亿+（2025-08）；抖音没有官方日活，第三方数字冲突。</li>
+<li>群体：新就业形态劳动者 8,400 万（2023）；外卖骑手 1,000 万以上（2025）；工会驿站 18.61 万个（2024 年底）；外卖骑手吧只有 2,288 个关注。</li>
+<li>规则：小红书社区公约 2.0（2026-01-19）禁止站外引流和营销式私信。</li>
+<li>合规：《个人信息保护法》2021-11-01 施行，敏感信息（如位置）需单独同意，14 岁以下需监护人同意；《数据安全法》2021-09-01 施行。<span class="tag hi">已读 npc.gov.cn</span></li>
+</ul>
+<h3>丽水与凤凰城</h3>
+<ul>
+<li><b>丽水：</b>丽水山耕官方网站的成员/产品数冲突（352/956 vs 523/834），并列未选；缙云烧饼 2023 年产值 34.8 亿、2.4 万从业者（已读原页），2024 年另有 38.9 亿的摘要；青田海外华侨 38.1 万、分布 146 国；景宁畲族 18,410 人（注册居民 166,174）。官方的"乡村振兴学院"页面没找到，<b>不要假设它存在</b>。</li>
+<li><b>凤凰城：</b>已证实存在：211 Arizona、Maricopa Community Colleges、Phoenix Public Library（PHXWorks、ESL）、AZ Worker Rights Center、Macehualli Work Center、St. Mary's Food Bank（有 Skills Center）。Chispa AZ 是气候/环境组织，不是劳工组织。<b>没找到亚利桑那本地的零工司机组织。</b></li>
+</ul>
+<p class="src">仍未核实：豆瓣、淘宝大学/拼多多商学院、微信群规则、ASU、丽水的新就业形态服务站和淘宝村总数，以及凤凰城任何伙伴愿不愿合作。</p>
+<h3>听的伦理</h3>
+<ul>
+<li>先联系版主或组织、说明身份；不抓取、不私信推销、给参与者付费、匿名；中国部分遵守个人信息保护法和平台规则。</li>
+<li>两周计划：10 个社区、15–20 个访谈、12 个问题（你现在怎么挣钱？愿意接什么额外工作？你不信任 AI 的什么？）。参与者付费金额是建议，不是有来源的数字。</li>
+</ul>
+
+<h2>5. 小额增收：把"已有但变不了现"的价值掏出来</h2>
+<ol>
+<li><b>多数小收入不是 AI 创造的</b>：AI 把整理、翻译、拍照、文案、对账的成本降到近 0，使原本不值得做的杂活变成"一小时 $15–25 或 ¥50–100"的事。价值来自人 + 信任 + 本地情境。<span class="tag med">推论</span></li>
+<li><b>AI 工具本身几乎免费</b>（淘宝商家 AI 工具、eBay Magical Listing、剪映）。卖工具或课的模式对低收入者既无壁垒、又最像割韭菜；能收费的只有"人替你装进你的店里并陪你跑通"。</li>
+<li><b>最安全的钱 ≠ 最多的钱。</b>涉及 SSI/SNAP/Medicaid 先算福利悬崖：多挣 $200/月，SSI 受益人净得约 $142.50；越过 Medicaid 138% FPL 线（单身约 $1,835/月）是悬崖。<span class="tag med">SSA 摘要 + 计算</span></li>
+<li><b>证据最硬的小钱是少交/多拿：</b>EITC 平均约 $2,541、VITA 免费报税、里程扣除（2026 年 72.5¢，下半年据报 76¢）。</li>
+<li><b>平台抽成 5–20% 是常态：</b>Etsy 约 12–20%，eBay 13.6% + 每单 $0.30/0.40，社区团购 10–18%。我们的公平抽成上限设 10%，含所有成本，公开账本。</li>
+<li><b>方言/语音数据：</b>"最肯定被买、最容易被压价"。微信约 ¥1/3 句、日上限约 ¥40；Karya 累计付 $442 万，注册 20 万人，人均约 $22（注册≠活跃）。只在有买家时做。</li>
+</ol>
+
+<h3>29 个微机会：前 12 名（评分 5 维等权，满分 25，主观）</h3>
+<table>
+<tr><th>#</th><th>微机会</th><th>总分</th></tr>
+<tr><td>1</td><td>闲鱼/淘宝/拼多多小卖家 AI 图文上架（丽水）</td><td>22</td></tr>
+<tr><td>18</td><td>VITA/EITC 陪办与语言支持（凤凰城，志愿，非收费）</td><td>22</td></tr>
+<tr><td>5</td><td>民宿/农家乐 AI 文案+短视频+回复（丽水）</td><td>20</td></tr>
+<tr><td>10</td><td>小店双语翻译+客服回复+文档整理（凤凰城）</td><td>20</td></tr>
+<tr><td>17</td><td>简历/求职/表格代填前整理（两地）</td><td>20</td></tr>
+<tr><td>4</td><td>农户自产自销农产品短视频+脚本运营员（丽水）</td><td>19</td></tr>
+<tr><td>11</td><td>出口工坊多语种内容（丽水↔凤凰城）</td><td>19</td></tr>
+<tr><td>15</td><td>本地语言字幕/听打（青田话等）</td><td>19</td></tr>
+<tr><td>16</td><td>老照片修复（两地）</td><td>19</td></tr>
+<tr><td>19</td><td>福利悬崖导航（凤凰城）</td><td>19</td></tr>
+<tr><td>20</td><td>双语 AI 辅导副驾（图书馆/社区）</td><td>19</td></tr>
+<tr><td>29</td><td>微型资助/微贷申请协助（两地）</td><td>19</td></tr>
+</table>
+<p class="src">不建议：数字人"躺赚"直播（总分 12）、带宽共享/"挂机赚钱"App（未核）、向低收入者收入门费/培训费/设备费的任何模式。证据维度多数只有 2–3 分：真正独立证明"AI 帮低收入者增收"的证据仍然稀少。</p>
+
+<h3>团结的形式与《公平中介章程》</h3>
+<ul>
+<li><b>存在且有证据：</b>Los Deliveristas Unidos 争到纽约外卖员最低薪酬（约 $17.96→$19.56–19.96/小时税前）；Worker Info Exchange 靠 GDPR 在阿姆斯特丹胜诉；中国约 18 万个工会驿站与 15 家平台算法协商（低可信）。</li>
+<li><b>走过弯路：</b>Driver's Seat 关闭并转入普林斯顿；数据合作社目前主要在"讲道理有人听"阶段，不是"给会员发钱"阶段。</li>
+<li><b>章程（11 条，节选）：</b>抽成上限 10%（含全部成本）· 公开账本 · 公开定价 · 数据归本人 · 随时退出 · 零前期费用 · 申诉渠道 · 工人董事会席位。</li>
+</ul>
+
+<h3>三个 30 天试点</h3>
+<table>
+<tr><th>试点</th><th>做什么</th><th>要点</th></tr>
+<tr><td>P1 丽水</td><td>共富工坊式"AI 上架/短视频包"</td><td>小卖家和农户；公开收入账本</td></tr>
+<tr><td>P2 凤凰城</td><td>福利安全的"邻里双语小助手"</td><td>每个参与者先做福利影响测算</td></tr>
+<tr><td>P3 跨境</td><td>青田话/丽水话字幕 + 出口详情页</td><td>有买家才开工</td></tr>
+</table>
+
+<h2>6. 可信度与缺口</h2>
+<div class="card warn"><ul>
+<li>2025–2026 新来源大多只读到搜索摘要；读过全文的主要是毛文、Pew 2026、参议院 HELP 亚马逊报告、MiDAS 说明、CAICT 白皮书等。</li>
+<li><b>11 中有 6 项未核实：</b>亚利桑那带薪家庭护理员、无证水电工金额上限、创业贷款上限、海外在线辅导禁令、带宽共享收入、丽水长期护理保险；SNAP 30% 递减率和 Medicaid 对自雇者的 80 小时算法来自记忆。</li>
+<li>数据中心对电费的归因有争议；智利与乌拉圭用水数字疑似混用，智利一条已弃用。</li>
+<li>中国青年失业率 18.9%（2026 年 8 月）多家转述一致，仍建议核对国家统计局原始发布。</li>
+<li>中国数据中心外部性、金融化数字、中国低端白领与县域灵活就业、各阶级的政治态度、无证移民：证据空白或基本是推论。</li>
+<li>真正运营前请律师和会计过目：未经授权执业、报税员注册（PTIN）、cottage food 规则。</li>
+</ul></div>
+
+<h2>7. 下一步</h2>
+<ol>
+<li>用 <code>00-method-hunan-report.md</code> 里的 20 个访谈题，在丽水和凤凰城各访 5–10 个人（小店主、标注员、骑手、兼职后台人员）。</li>
+<li>按上面的规则先联系版主和线下组织（凤凰城的 Worker Rights Center、Macehualli、图书馆 PHXWorks；丽水的电商促进会、青田侨团），再做访谈。</li>
+<li>先做 P2 或 P1 之一，验证"有买家、工人到手多少、福利影响多少"。</li>
+</ol>
+</main>
+</body>
+</html>

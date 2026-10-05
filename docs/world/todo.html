@@ -1,0 +1,372 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>待办与联络清单</title><style>:root{--bg:#fff;--fg:#1d1d1f;--mut:#666;--line:#ddd}@media(prefers-color-scheme:dark){:root{--bg:#16171a;--fg:#e8e8ea;--mut:#9a9aa0;--line:#333}}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"PingFang SC",sans-serif;margin:0}main{max-width:900px;margin:0 auto;padding:20px 16px 60px}
+table{border-collapse:collapse;display:block;overflow-x:auto}td,th{border:1px solid var(--line);padding:6px 10px;font-size:14px;vertical-align:top}blockquote{border-left:3px solid var(--line);margin:1em 0;padding:0 1em;color:var(--mut)}
+ul{list-style:none;padding-left:1.2em}li input{margin-right:6px}a{color:#3b82f6}</style></head><body><main><p><a href="./">← World 报告</a></p><h1>12 待办清单、联系名单、他们需要的 AI 服务</h1>
+<blockquote>
+<p>日期：2026-10-05。依据：用户补充的约束（见 §0）+ <code>11-small-income-and-solidarity.md</code>、<code>10-where-they-gather.md</code>、<code>07-ai-income-opportunities.md</code>。
+标签：<code>#fact</code> 用户自述或文件已记载；<code>#inference</code> 我的推断；<code>#unverified</code> 未核实，行动前先核。本文不是法律建议。</p>
+</blockquote>
+<h2>0. 你的约束（用户 2026-10-05 自述）<code>#fact</code></h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>内容</th>
+<th>对计划的影响 <code>#inference</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>常驻地</td>
+<td>西雅图</td>
+<td>日常只能远程；线下靠出差窗口</td>
+</tr>
+<tr>
+<td>凤凰城</td>
+<td>每年 12 次，累计约 30 天（平均每次约 2.5 天）</td>
+<td>每次出差只排 1–2 个线下会面，其余远程</td>
+</tr>
+<tr>
+<td>丽水、杭州</td>
+<td>各 1 次，各累计约 7 天</td>
+<td>丽水 7 天是全年唯一的线下窗口，必须提前 4–6 周约好</td>
+</tr>
+<tr>
+<td>人脉</td>
+<td>认识政府和不少公务员</td>
+<td>优先让他们做<strong>介绍人</strong>，不要先把政府当客户（见 §4 风险）</td>
+</tr>
+<tr>
+<td>身份</td>
+<td>美国绿卡</td>
+<td>可在美国开公司。凤凰城小企业认证是否要求公民身份 <code>#unverified</code>，见 TODO</td>
+</tr>
+<tr>
+<td>服务 vs 产品</td>
+<td>没有倾向</td>
+<td>见 §1 建议</td>
+</tr>
+<tr>
+<td>先咨询现金流还是先做产品</td>
+<td>不知道</td>
+<td>见 §1 建议</td>
+</tr>
+</tbody>
+</table>
+<h2>1. 对"服务还是产品、咨询还是产品"的建议 <code>#inference</code></h2>
+<p>先做<strong>服务</strong>（人 + 工具交付），6–12 个月后再决定是否产品化。理由：</p>
+<ol>
+<li>你每年在两个城市合计只有约 44 天，产品没有用户反馈回路。服务能在一次出差里验证"有没有人付钱"。</li>
+<li><code>11</code> §0 第 2 点：AI 工具本身几乎免费，卖工具没有壁垒；能收费的是"人替你装进你的店里并陪你跑通"。</li>
+<li>服务的交付可以远程拆给本地的运营员（宝妈、返乡青年、双语居民），这正是 <code>11</code> 的试点 P1/P2/P3 的做法。</li>
+<li>判断标准（设在第 90 天）：同一种服务被 ≥5 个客户重复买、且你的交付工时有 ≥50% 能被本地人接走，才考虑做成产品。</li>
+</ol>
+<h2>2. 他们需要哪些 AI 服务？他们会做什么？</h2>
+<p>按人群列。"需求"是我基于 <code>05/06/07/11</code> 的推断，<strong>不是访谈得来的</strong>，所以每条都要在 §3 的访谈里验证。<code>#inference</code></p>
+<h3>2.1 丽水（出差窗口：7 天）</h3>
+<table>
+<thead>
+<tr>
+<th>人群</th>
+<th>他们现在做什么</th>
+<th>可能需要的 AI 相关服务</th>
+<th>他们会产出什么</th>
+<th>对应 11 的卡片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>农户、山货小卖家（丽水山耕、缙云烧饼等产业链）</td>
+<td>拼多多、淘宝、微信、抖音卖货</td>
+<td>主图、标题、详情页、30 秒短视频、客服常见问题回复</td>
+<td>上架包：3 个商品的图 + 文案 + 视频</td>
+<td>1, 4</td>
+</tr>
+<tr>
+<td>民宿、农家乐主</td>
+<td>美团/携程/小红书/微信接单</td>
+<td>文案、短视频、评论回复、旺季排班</td>
+<td>内容包、回复模板</td>
+<td>5</td>
+</tr>
+<tr>
+<td>出口工坊、侨乡商户（青田，海外华侨 38.1 万，分布 146 个国家）</td>
+<td>外贸订单，西班牙语/英语沟通</td>
+<td>西/英详情页、报价邮件、青田话字幕</td>
+<td>多语言详情页、字幕</td>
+<td>11, 15</td>
+</tr>
+<tr>
+<td>宝妈、返乡青年</td>
+<td>兼职客服、带货、做内容</td>
+<td>学会用工具后做上述服务的<strong>交付员</strong></td>
+<td>他们自己就是上面所有产出的交付者</td>
+<td>1, 4, 5</td>
+</tr>
+<tr>
+<td>老人（方言使用者）</td>
+<td>基本没有线上收入</td>
+<td>方言录音/字幕校对</td>
+<td>仅在有买家时做，且不收声纹</td>
+<td>11</td>
+</tr>
+<tr>
+<td>基层政府、乡镇、产业协会</td>
+<td>做"共富工坊"、助农直播</td>
+<td>帮助下辖商户做上架/短视频的培训与对接</td>
+<td>一份可复用的培训包与效果账本</td>
+<td>P1 试点</td>
+</tr>
+</tbody>
+</table>
+<h3>2.2 凤凰城（出差窗口：12 次，共约 30 天）</h3>
+<table>
+<thead>
+<tr>
+<th>人群</th>
+<th>他们现在做什么</th>
+<th>可能需要的 AI 相关服务</th>
+<th>他们会产出什么</th>
+<th>对应 11 的卡片</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中文、西语小店主（餐馆、美甲、杂货）</td>
+<td>手写菜单、微信/WhatsApp/Facebook 回复客人</td>
+<td>双语菜单、Google 商家资料、评论回复、促销文案</td>
+<td>一份双语资料包 + 每月更新</td>
+<td>10</td>
+</tr>
+<tr>
+<td>双语低收入居民</td>
+<td>零工、餐饮、清洁</td>
+<td>简历、求职信、面试练习、翻译小单</td>
+<td>求职材料、小店翻译</td>
+<td>17, 10</td>
+</tr>
+<tr>
+<td>零工司机/外卖员</td>
+<td>Uber/DoorDash/Instacart</td>
+<td>里程与扣除整理、报税材料整理（配合 VITA）</td>
+<td>一份里程与收入记录</td>
+<td>18</td>
+</tr>
+<tr>
+<td>小卖家</td>
+<td>Etsy/eBay/Facebook Marketplace</td>
+<td>上架文案和图片、定价查询</td>
+<td>上架包</td>
+<td>2</td>
+</tr>
+<tr>
+<td>移民和低收入家庭</td>
+<td>用福利、找工作</td>
+<td>福利影响测算的"翻译"、表格填写协助（<strong>不给法律意见</strong>）</td>
+<td>一页福利影响说明</td>
+<td>18, 3.1</td>
+</tr>
+<tr>
+<td>图书馆、社区组织、社区大学</td>
+<td>做求职班、ESL 班</td>
+<td>给学员做"AI 副业与福利安全"工作坊</td>
+<td>工作坊材料、转介渠道</td>
+<td>P2 试点</td>
+</tr>
+</tbody>
+</table>
+<h3>2.3 他们<em>不</em>需要的东西（别做）<code>#inference</code></h3>
+<ul>
+<li>"AI 课"、入门费、设备费（<code>11</code> §0 第 10 点）。</li>
+<li>数字人"躺赚"直播、"挂机赚钱"App。</li>
+<li>向他们收集声纹或身份数据而没有买家和合同。</li>
+</ul>
+<h2>3. TODO（按时间，已考虑你的出差窗口）</h2>
+<h3>第 0 步：本周在西雅图能做完的（零成本，远程）</h3>
+<ul>
+<li><label><input type="checkbox"> 确认你<strong>下一次</strong>去凤凰城的日期，以及今年还剩几次 → 决定 §4 A 组先约谁</label></li>
+<li><label><input type="checkbox"> 确认丽水/杭州那一次旅行的<strong>具体日期</strong>。没有日期，下面丽水的所有联络都无法安排</label></li>
+<li><label><input type="checkbox"> 确认丽水的政府人脉各自是<strong>什么部门</strong>（商务、农业农村、人社、科技、电商办、乡镇），写在 §4 表里</label></li>
+<li><label><input type="checkbox"> 在 <code>World/11</code> 里挑 <strong>一个</strong> 试点先做（我建议 P2 凤凰城，因为你在美国，法律与付款都更好处理；P1 需要你 7 天内到位）</label></li>
+<li><label><input type="checkbox"> 开一个单独的邮箱和 Google 表格，记录每一次联络（谁、何时、结果、下一步）</label></li>
+</ul>
+<h3>第 1–2 周：核实"会卡住你的"几项（远程）</h3>
+<ul>
+<li><label><input type="checkbox"> <code>#unverified</code> 绿卡持有人在亚利桑那开公司/LLC 的步骤与费用；是否需要本地登记代理人</label></li>
+<li><label><input type="checkbox"> <code>#unverified</code> 凤凰城/亚利桑那小企业认证（Small Business Enterprise 等）是否要求公民身份，绿卡持有人是否可申请</label></li>
+<li><label><input type="checkbox"> <code>#unverified</code> 你自己的雇主有没有副业/利益冲突条款（你在西雅图有工作的话必须先看合同）</label></li>
+<li><label><input type="checkbox"> <code>#unverified</code> 与中国政府人员合作时，美国方面的合规点（如外国代理人登记、礼品/款待规则）。<strong>咨询一位美国律师，不要凭我这份文件</strong></label></li>
+<li><label><input type="checkbox"> <code>#unverified</code> 跨境收付款：从中国收人民币、向中国的交付员付酬的合法渠道与税务</label></li>
+<li><label><input type="checkbox"> 把 <code>11</code> 里六项 <code>#unverified</code>（AZ 付费家庭护理、handyman 上限、小额贷款上限、境外在线辅导禁令、带宽共享收益、丽水长期护理保险）按你的路线只核实相关的 1–2 项</label></li>
+</ul>
+<h3>第 2–6 周：约访谈（以倾听为主；见 §4）</h3>
+<ul>
+<li><label><input type="checkbox"> 凤凰城：发 §4 A 组的邮件（下一次出差前至少 3 周）</label></li>
+<li><label><input type="checkbox"> 丽水：通过你的政府人脉做 §4 B 组的介绍，要求只介绍<strong>人</strong>，不要求立项</label></li>
+<li><label><input type="checkbox"> 每组目标：5–10 次访谈。用 <code>World/00-method-hunan-report.md</code> 里的 20 个问题（按人群各挑 8–10 个）</label></li>
+<li><label><input type="checkbox"> 访谈前准备一页"我是谁、做什么、不收什么钱、不卖什么"的中英文自我介绍（零预付、公开账本、10% 封顶）</label></li>
+</ul>
+<h3>出差窗口内（线下）</h3>
+<ul>
+<li><label><input type="checkbox"> 凤凰城每次出差只排：1 场访谈 + 1 场工作坊/展位（图书馆、社区组织）</label></li>
+<li><label><input type="checkbox"> 丽水 7 天的建议结构：2 天走访（电商促进会/乡镇政府/侨团）、3 天访谈小卖家与民宿主、1 天试点启动会、1 天缓冲</label></li>
+<li><label><input type="checkbox"> 每次访谈后 24 小时内写 1 页笔记；每周汇总一次</label></li>
+</ul>
+<h3>第 6–12 周：小试点</h3>
+<ul>
+<li><label><input type="checkbox"> 跑一个 30 天试点（P1 或 P2），预算：P1 约 ¥1,500，P2 约 $300（<code>11</code> §7）</label></li>
+<li><label><input type="checkbox"> 设停止线（<code>11</code> §7 里已写）；每周回访"有没有负面感受"</label></li>
+<li><label><input type="checkbox"> 第 90 天：对照 §1 的判断标准，决定继续服务、产品化，还是换方向</label></li>
+</ul>
+<h2>4. 你需要联系谁（Reach-out 清单）</h2>
+<blockquote>
+<p>每个组织的"存在"来自 <code>10-where-they-gather.md</code>，具体合作意愿<strong>全部 <code>#unverified</code></strong>。邮件草稿是草稿，请你改成自己的话。</p>
+</blockquote>
+<h3>A 组：凤凰城（用你每年 12 次出差）</h3>
+<table>
+<thead>
+<tr>
+<th>优先</th>
+<th>组织</th>
+<th>为什么</th>
+<th>请求内容</th>
+<th>怎么接触</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>AZ Worker Rights Center</td>
+<td>劳工与零工权益，能说明真实困境</td>
+<td>30 分钟访谈：你们看到的工人最常见的收入与 AI/平台问题</td>
+<td>官网联络表格或邮件；先发邮件，到访前再约</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Macehualli Work Center</td>
+<td>日工中心，直接接触低收入劳动者</td>
+<td>想了解日工的接单方式和是否有语言/数字工具需求</td>
+<td>同上；尊重他们的隐私，不拍照不收集个人信息</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Phoenix Public Library（PHXWorks、ESL）</td>
+<td>求职班、ESL 班，天然的"AI 副业与福利安全"工作坊场所</td>
+<td>是否可以做 60 分钟免费公开工作坊或设展位</td>
+<td>图书馆项目负责人邮件</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Maricopa Community Colleges（社区大学）</td>
+<td>学员是潜在交付员</td>
+<td>联系就业服务或继续教育部门</td>
+<td>就业服务办公室</td>
+</tr>
+<tr>
+<td>5</td>
+<td>211 Arizona</td>
+<td>资源转介，福利安全转介</td>
+<td>建立转介关系，遇到移民/法律/福利问题可转出</td>
+<td>机构联络页</td>
+</tr>
+<tr>
+<td>6</td>
+<td>St. Mary's Food Bank（技能中心）</td>
+<td>低收入家庭</td>
+<td>了解学员需求</td>
+<td>项目办公室</td>
+</tr>
+<tr>
+<td>7</td>
+<td>本地小店主（中、西语社区）</td>
+<td>P2 试点的客户</td>
+<td>约 5–8 家愿意被访</td>
+<td>走访、你自己的人脉</td>
+</tr>
+</tbody>
+</table>
+<p>邮件草稿（英文，凤凰城）：</p>
+<blockquote>
+<p>Subject: Short conversation about workers and AI tools — Phoenix, [date range]
+Hi [name], I'm a Seattle-based researcher (green-card holder) who visits Phoenix about once a month. I'm studying how low-income workers and small shops in the Phoenix area earn today and whether simple AI tools could help them earn a little more without risking benefits. I'm not selling anything and won't collect personal data. Could I buy you coffee or schedule a 30-minute call on [dates]? I'd also share what I learn with your team. Thank you — [name]</p>
+</blockquote>
+<h3>B 组：丽水（用你的 7 天窗口）</h3>
+<table>
+<thead>
+<tr>
+<th>优先</th>
+<th>对象</th>
+<th>为什么</th>
+<th>请求内容</th>
+<th>怎么接触</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>你认识的政府人员（商务、农业农村、人社、电商办、乡镇）</td>
+<td>你的最强资产</td>
+<td><strong>只请他们介绍</strong>：电商促进会、两三位小卖家、一位侨团联系人。不要求立项，不谈合同</td>
+<td>微信/私下，约好具体日期</td>
+</tr>
+<tr>
+<td>2</td>
+<td>丽水市电商促进会（名称与存在 <code>#unverified</code>）</td>
+<td>小卖家的天然网络</td>
+<td>访谈会长，加入一次会员活动</td>
+<td>通过政府人脉介绍</td>
+</tr>
+<tr>
+<td>3</td>
+<td>青田侨团（名称 <code>#unverified</code>）</td>
+<td>38.1 万华侨，西/英需求</td>
+<td>了解出口工坊与华侨的语言/内容需求</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>4</td>
+<td>小卖家与民宿主（缙云烧饼摊、丽水山耕生产者等）</td>
+<td>P1 试点客户</td>
+<td>访谈 5–10 人，约 3 位愿意做试点</td>
+<td>通过上面的介绍人</td>
+</tr>
+<tr>
+<td>5</td>
+<td>宝妈/返乡青年</td>
+<td>交付员</td>
+<td>访谈 5 人，了解时间、收入诉求与低保影响</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>6</td>
+<td>杭州（7 天窗口，如有）</td>
+<td>杭州电商/AI 从业者可做<strong>导师或承接外包</strong></td>
+<td>访谈 2–3 位做过农产品电商/MCN 的人</td>
+<td>你的人脉</td>
+</tr>
+</tbody>
+</table>
+<p>微信草稿（中文，给政府朋友）：</p>
+<blockquote>
+<p>[称呼]，我 [月份] 会回丽水一周，在做一个小研究：普通小卖家、民宿主怎样用 AI 工具多挣一点钱，不收费用、不碰数据、不卖课。想请你帮忙介绍 2–3 位愿意聊聊的商户和电商促进会/侨团的负责人，我自己去拜访，不需要你们立项或表态。方便的话我们先约个时间当面说。</p>
+</blockquote>
+<h3>C 组：不要联系 / 先别联系 <code>#inference</code></h3>
+<ul>
+<li>Reddit 版块：先看 <code>10</code> §4。r/doordash_drivers、r/InstacartShoppers 禁问卷。先联系版主说明身份，倾听，不群发。</li>
+<li>中国平台上的陌生人私信：小红书社区公约 2.0 禁止站外引流和营销私信。</li>
+<li>任何 14 岁以下对象（《个人信息保护法》需监护人同意）。</li>
+</ul>
+<h2>5. 风险与未决（诚实版）</h2>
+<ol>
+<li><strong>你同时在做"政府关系"和"面向低收入者的小生意"</strong>：政府人脉应只用来介绍，不要让政府成为你的第一个客户。否则你会被政府的节奏和预算牵着走，也会损害小卖家对你的信任。<code>#inference</code></li>
+<li><strong>你每年只有约 44 天线下时间</strong>：任何需要长期驻场的设计都不可行；必须靠本地交付员远程协作。</li>
+<li><strong>本文所有"需求"来自推断，而非访谈</strong>。第一轮访谈的目的就是推翻其中的一部分。</li>
+<li><strong>美国、中国两边的合规点我没核</strong>：开公司、认证、跨境付款、与中国官员合作的美国合规，见 TODO 第 1–2 周。</li>
+<li>你没回答的"服务 vs 产品"，我先默认服务；若你有别的倾向告诉我，我会改。</li>
+</ol>
+<h2>6. 下一步你需要回答我的 3 个问题</h2>
+<ol>
+<li>下一次去凤凰城和回丽水/杭州的<strong>具体日期</strong>是什么时候？</li>
+<li>你认识的政府人员主要在<strong>哪些部门</strong>？</li>
+<li>你在西雅图有全职工作吗？这会决定副业条款与每周可投入的小时数。</li>
+</ol></main><script>try{var k='todo12',s=JSON.parse(localStorage.getItem(k)||'{}'),b=document.querySelectorAll('input[type=checkbox]');b.forEach(function(c,i){c.checked=!!s[i];c.onchange=function(){s[i]=c.checked;try{localStorage.setItem(k,JSON.stringify(s))}catch(e){}}})}catch(e){}</script></body></html>

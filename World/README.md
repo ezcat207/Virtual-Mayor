@@ -21,3 +21,5 @@
 | [04-synthesis.md](04-synthesis.md) | 综合：AI 对低收入人群"拿走什么/给什么" + 待补查清单 | 引用上面各文件 |
 
 > 注：这些文件完成时 agent 的搜索额度耗尽，中国 (d)(e)(f)(g) 组、北美多个子群证据较薄，已逐条标注可信度。
+
+- `12-todo-and-outreach.md` 待办、联络名单、他们需要的 AI 服务（网页：docs/world/todo.html）

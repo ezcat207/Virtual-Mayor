@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>World 调研结论：低收入人群与 AI</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1a;--mut:#6b6b64;--card:#fff;--line:#e3e1d8;--acc:#b4412b;--ok:#2f7d4f;--warn:#b7791f;--bar:#c9a227}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161614;--fg:#ecebe4;--mut:#a09f96;--card:#1f1f1c;--line:#34332e;--acc:#e0765d;--ok:#5ab97f;--warn:#e0b04a;--bar:#d6b13c}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,"PingFang SC","Noto Sans SC",sans-serif}
+main{max-width:920px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:1.7rem;margin:.2em 0}h2{font-size:1.3rem;margin:2.2em 0 .6em;border-top:2px solid var(--fg);padding-top:.7em}h3{font-size:1.05rem;margin:1.4em 0 .4em}
+.sub{color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.tl{border-left:4px solid var(--acc)}
+table{width:100%;border-collapse:collapse;font-size:.92rem;margin:10px 0;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--card);white-space:nowrap}
+.tag{display:inline-block;font-size:.72rem;padding:1px 7px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin-left:4px;white-space:nowrap}
+.hi{color:var(--ok);border-color:var(--ok)}.med{color:var(--warn);border-color:var(--warn)}.lo{color:var(--acc);border-color:var(--acc)}
+.bar{display:flex;height:34px;border-radius:6px;overflow:hidden;margin:10px 0;font-size:.75rem}
+.bar div{display:flex;align-items:center;justify-content:center;color:#fff;min-width:0}
+.src{font-size:.8rem;color:var(--mut)}
+ul{padding-left:1.2em}
+.warn{border-left:4px solid var(--warn)}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+<main>
+<h1>World 调研结论：低收入人群与 AI</h1>
+<p class="sub">中国 & 北美 · 仿《湖南农民运动考察报告》的分层调查法 · 截至 2026-10 · 所有数字回指 <code>World/sources/</code> 中的来源编号，置信度见各标签。</p>
+
+<div class="card tl">
+<strong>一句话：</strong>目前最强的证据不是"AI 抢了低收入者的工作"，而是<b>算法管理、转包链条压价、误判无人问责</b>；AI 给低收入者的增收能力，<b>还缺少独立证据</b>。你的"大模型是新型提取"假设，在<b>数据劳动</b>上成立，在"版权诉讼能把价值还给底层"上基本不成立。
+</div>
+
+<h2>1. 全球分层：谁在哪一层</h2>
+<p class="sub">2021 PPP 日收入，2023 年人口占比 <span class="tag med">W · PIP 数据，含自设 $15/$30 切分</span></p>
+<div class="bar" aria-label="全球六层收入">
+<div style="width:10.5%;background:#7a1f12" title="<$3">10.5</div>
+<div style="width:8.9%;background:#a3361f" title="$3–4.2">8.9</div>
+<div style="width:27.8%;background:#c9772d" title="$4.2–8.3">27.8</div>
+<div style="width:18.7%;background:#9b8a2a" title="$8.3–15">18.7</div>
+<div style="width:15.3%;background:#4f8a62" title="$15–30">15.3</div>
+<div style="width:18.9%;background:#2f5f7d" title=">$30">18.9</div>
+</div>
+<p class="src">&lt;$3 ｜ $3–4.2 ｜ $4.2–8.3 ｜ $8.3–15 ｜ $15–30 ｜ &gt;$30（%，约 8.4 亿 / 7.1 亿 / 22.4 亿 / 15.1 亿 / 12.3 亿 / 15.2 亿人）</p>
+<ul>
+<li><b>中国：</b>18% 在 $4.2–8.3（农村 27%），中间两层各约 35%，13% 在 &gt;$30。</li>
+<li><b>美国 86%、加拿大 91% 在 &gt;$30</b>——北美的"低收入"只能用国内标准：美国官方贫困率 10.2%、SPM 13.1%；加拿大 LIM 12.5%。<span class="tag hi">官方</span></li>
+<li><b>AI 暴露与使用的鸿沟：</b>IMF：发达经济体 60% 岗位暴露，低收入国家 26%；ITU：高收入国家 94% 上网，低收入 23%。<span class="tag med">IMF/ILO/ITU</span></li>
+<li class="src">口径提醒：中国 PIP 是消费口径；加拿大/墨西哥 2023 为插值；元对 PPP 美元约 4.19 为未核实假设。</li>
+</ul>
+
+<h2>2. 他们怎么挣钱（问题 1）</h2>
+<h3>中国（NBS 2025）<span class="tag hi">官方</span></h3>
+<table>
+<tr><th></th><th>人均可支配</th><th>工资</th><th>经营</th><th>转移</th><th>财产</th></tr>
+<tr><td>农村</td><td>24,456 元</td><td>42.5%</td><td>33.5%</td><td>21.4%</td><td>2.5%</td></tr>
+<tr><td>城镇</td><td>56,502 元</td><td>60.8%</td><td>11.7%</td><td>17.8%</td><td>9.7%</td></tr>
+</table>
+<ul>
+<li>最低 20% 家庭：人均 10,150 元/年（约 846 元/月）。</li>
+<li>农民工 3.0115 亿，月均 5,075 元；灵活就业官方口径"超 2 亿"，但参加职工养老的仅 7,057 万，职业伤害保障 2,325 万。<span class="tag hi">官方</span></li>
+<li>骑手月均 7,014（专送高频）–8,328（众包）元，网约车 7,623 元（会高估全年）。<span class="tag med">清华调查</span></li>
+<li>电商商家调查：30.1% 净利润为负。<span class="tag lo">单一问卷</span></li>
+<li class="src">缺口：低收入组的收入来源构成、农民工合同/社保/工时、汇款占比、摊贩收入、骑手全年工时与债务——未找到，未编数。</li>
+</ul>
+
+<h3>北美（美国为主）</h3>
+<ul>
+<li>工资仍是主体：SHED 2025 中 68% 成年人有工资/自雇收入，27% 有社保，5% 有 SSI/TANF。<span class="tag hi">美联储</span></li>
+<li>零工只是补充：20% 上月做过，96% 每周不到 35 小时，仅 21% 当主业（SHED 2024）。</li>
+<li>缓冲很薄：63% 能拿出 $400 现金；收入 &lt;$25,000 的家庭中，34% 上月没付清全部账单，38% 因费用跳过医疗。</li>
+<li>ALICE：约 42% 家庭低于生存预算（2023）；居家护理工人年收入中位 $22,429，59% 领公共补助。<span class="tag med">ALICE 仅摘要</span></li>
+<li>零工扣成本后时薪<b>没有独立结论</b>：Uber 资助的研究 $21–23，聚合博客 $11–16，我们的估算约 $16.6–17.5。<span class="tag lo">冲突并列</span></li>
+</ul>
+
+<h2>3. AI 在"拿走"什么，又"给"什么</h2>
+<table>
+<tr><th>机制</th><th>证据</th><th>强度</th></tr>
+<tr><td>身体/过劳（算法排班、配额）</td><td>亚马逊 Prime Day 伤害率 &gt;10/百人，约行业 2 倍（参议院 HELP）；中国骑手有 2020–2025 政策时间线，但<b>无工时/健康量化</b></td><td><span class="tag hi">北美强</span><span class="tag lo">中国缺</span></td></tr>
+<tr><td>算法误判</td><td>密歇根 MiDAS 错标约 4 万人，错误率 93%，$2,000 万和解；Arkansas/Idaho Medicaid、SafeRent（$227.5 万）已核实</td><td><span class="tag hi">强</span></td></tr>
+<tr><td>岗位替代</td><td>22–25 岁高暴露岗位相对就业 -16%~-19%，同一研究称"无广泛替代"；Yale 认为无大范围冲击；BLS：办公行政 -4%、客服 -5%（2025–35）</td><td><span class="tag med">弱到中，有争议</span></td></tr>
+<tr><td>数据标注压价</td><td>中国县域标注 2,500–3,000 元/月，层层转包后单价降到约十分之一；Sama 肯尼亚到手 $1.32–2/小时 vs 合同价 $12.5</td><td><span class="tag med">中</span></td></tr>
+<tr><td>使用鸿沟</td><td>Pew 2026：低收入 41% / 中 49% / 高 66% 用 AI 聊天机器人；黑人和西语裔（49%）不低于白人（46%）；中国农村上网率 69.5%</td><td><span class="tag hi">中强</span></td></tr>
+<tr class="g"><td>"给"：增收能力</td><td>客服新手 +34%；肯尼亚 640 家小企业 RCT：WhatsApp GPT-4 导师让高绩效者约 +15%，<b>却让低绩效者约 -8%</b>；Per Scholas（非 AI 培训）第 7 年 +14%。多数"增收"数字是机构自报</td><td><span class="tag lo">最薄</span></td></tr>
+</table>
+
+<h2>4. 假设检验：大模型是新型"提取"吗？（问题 3）</h2>
+<div class="card warn">披露：撰写本节的 agent 是 Anthropic 的模型，而 Anthropic 是 Bartz 案被告。请带着这个背景读。</div>
+<table>
+<tr><th>子论断</th><th>结论</th></tr>
+<tr><td>C1 训练使用了普通人的内容且未付费</td><td><span class="tag hi">事实成立</span> 但<b>多数判决目前不认定违法</b>（Bartz 针对盗版获取，GEMA 针对记忆复现，ROSS 是非生成式竞品）。道德 ≠ 法律</td></tr>
+<tr><td>C3 数据劳动被压价</td><td>数据工作者<span class="tag hi">强</span>；匿名内容贡献者<span class="tag lo">弱</span></td></tr>
+<tr><td>C5 "AI 只是自上而下抽取"</td><td><span class="tag med">部分被反驳</span>：新手生产率提升最大；开源权重模型（多为中国）抵消部分集中；Acemoglu 估计十年全要素生产率最多 +0.66%</td></tr>
+<tr><td>C6 应让价值回流底层</td><td>规范上站得住；<b>有效机制的证据弱</b>。Bartz 赔 $15 亿≈每本 $3,000，默认与出版商对半分；Reddit 授权收入归 Reddit。<b>版权诉讼是最漏的杠杆</b></td></tr>
+</table>
+<p>资本集中是真的：四大云厂商 2026 年计划资本开支约 $7,250 亿，OpenAI 估值 $8,520 亿。<span class="tag lo">估值低可信</span></p>
+
+<h3>谁是敌人，谁是朋友（按议题分）</h3>
+<table>
+<tr><th>方</th><th>数据归属</th><th>便宜的使用权</th><th>劳动</th></tr>
+<tr><td>前沿实验室 / 大平台</td><td>对手</td><td>盟友</td><td>中立偏对手</td></tr>
+<tr><td>转包 / 外包标注链条</td><td>—</td><td>—</td><td><b>最明确的对手</b></td></tr>
+<tr><td>开源权重社区</td><td>中立</td><td><b>朋友</b></td><td>中立</td></tr>
+<tr><td>工会 / 行会</td><td>朋友（对自己成员）</td><td>—</td><td>朋友（对自己成员）</td></tr>
+<tr><td>大权利人（出版商/迪士尼）</td><td>得利者，未必代表底层</td><td>可能对手</td><td>—</td></tr>
+<tr><td>地方政府（丽水/凤凰城）</td><td>采购条款可作杠杆</td><td>可作盟友</td><td>可作工资底线杠杆</td></tr>
+</table>
+<p class="src">此表是整理后的归纳 <code>#inference</code>，细表见 08-friends-and-enemies.md。</p>
+
+<h2>5. 你能做什么（问题 2）</h2>
+<p><b>先说诚实的结论：</b>没有第三方证据显示低收入人群靠 AI 副业大规模增收；先卖、后招人，不收前期费用。</p>
+<table>
+<tr><th>#</th><th>首批尝试</th><th>收入引擎</th><th>30 天验证</th></tr>
+<tr><td>1</td><td>丽水"AI 共富工坊"运营小队</td><td>跨境卖家的 AI 内容（2024 年丽水跨境出口 72.4 亿，2025 新增 105 家卖家）</td><td>有付费买家，工人到手收入公开</td></tr>
+<tr><td>2</td><td>凤凰城双语 AI 后台，低收入兼职人员完成</td><td>小企业后台、文书（建筑分包商、行为健康诊所、房东）</td><td>3 个付费客户</td></tr>
+<tr><td>3</td><td>公平付酬数据工作小队</td><td>先拿到付费买家，再招人（Karya 约 $5/小时，但人均终身仅约 $27，限制在工作量）</td><td>买家合同先于招募</td></tr>
+</table>
+<ul>
+<li>不要自建平台：纽约 Drivers Cooperative 2022–2024 收入掉约 60%。</li>
+<li><b>守则：</b>零前期费用、按结果付费、公布收入中位数/四分位数、公布客户付款与工人到手的差额。</li>
+<li>反面教材：FTC 的 Click Profit（损失至少 $1,400 万）；四川 2025 年"AI+"培训投诉 3,739 件，手法为"仅退 10%"、录播冒充直播、诱导分期。</li>
+<li>11 个方向的打分表在 07 文件，<b>分数是判断，权重可调</b>。</li>
+</ul>
+
+<h2>6. 丽水 & 凤凰城（前期调研）</h2>
+<ul>
+<li><b>丽水：</b>债务约为财政收入 7 倍，政府不买单，当发券方/背书方。钱在国家中小企业数字化转型试点、AI 创新券（2026-09-30 开放，面值未查到）、跨境电商。本地市场小：每年约 700 万 RMB 需 250–700 个客户，需复制到义乌/温州类产业带。</li>
+<li><b>凤凰城：</b>付钱的是中小企业（70.7 万家），不是市府；热灾 2026 年同期确认 230 例死亡（+60%），但相关公共预算 2026 年底到期。</li>
+</ul>
+
+<h2>7. 可信度与缺口</h2>
+<div class="card warn">
+<ul>
+<li>多数来源只读到搜索摘要，已标中/低可信度；<b>读过全文的少数</b>：毛泽东三篇原文、Pew 2026 PDF、参议院 HELP 亚马逊报告、MiDAS 说明、CAICT 白皮书、统计公报类页面、预算书。</li>
+<li>仍未核实：Illinois HB 3773、California CRD 规则；亚马逊 60 万人是泄露文件的二手报道，不是公司承诺；中国青年失业率；灵活就业 2.8/3.2 亿的智库数。</li>
+<li>2026 年事件（Bartz 终审、ROSS 上诉、NYT 案、估值）需对照原判决。</li>
+<li>所有价格、客户数、评分均为推测，需实地访谈验证。</li>
+<li>中国骑手工时/健康、农村老人和教育赋能、白领替代（客服/翻译/插画/配音）仍缺证据。</li>
+</ul>
+</div>
+
+<h2>8. 文件索引</h2>
+<table>
+<tr><th>文件</th><th>内容</th></tr>
+<tr><td>00-method-hunan-report.md</td><td>湖南报告方法 + 20 个访谈题</td></tr>
+<tr><td>01-world-income-map.md</td><td>全球 6 层分层</td></tr>
+<tr><td>02 / 03</td><td>中国 / 北美：低收入人群与 AI</td></tr>
+<tr><td>04-synthesis.md</td><td>前期综合</td></tr>
+<tr><td>05 / 06</td><td>中国 / 北美：收入来源</td></tr>
+<tr><td>07-ai-income-opportunities.md</td><td>增收机会与首批尝试</td></tr>
+<tr><td>08-friends-and-enemies.md</td><td>假设检验与敌友表</td></tr>
+<tr><td>sources/</td><td>全部来源（出处、Tags、Use）</td></tr>
+</table>
+</main>
+</body>
+</html>
