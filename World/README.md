@@ -16,6 +16,7 @@
 | [09-class-analysis-ai-globalization.md](09-class-analysis-ai-globalization.md) | 阶级分析：资本全球化 × AI 前后，敌友总表 | [sources-class-analysis](sources/sources-class-analysis.md) |
 | [10-where-they-gather.md](10-where-they-gather.md) | 他们在哪里聚集（Reddit/平台/线下，含伦理与听取计划） | [sources-gathering](sources/sources-gathering.md) |
 | [11-small-income-and-solidarity.md](11-small-income-and-solidarity.md) | 小额增收 29 个微机会 + 团结形式 + 公平中介章程 | [sources-small-income](sources/sources-small-income.md) |
+| [13-mobile-internet-precedent.md](13-mobile-internet-precedent.md) | 移动互联网前车之鉴：职业变迁、中美政策时间线、AI 政策前瞻 | [sources-mobile-internet](sources/sources-mobile-internet.md) |
 | [report-class.html](report-class.html) | **阶级分析总览网页（第二版）** | — |
 | [report.html](report.html) | **总览报告（浏览器打开）** | — |
 | [04-synthesis.md](04-synthesis.md) | 综合：AI 对低收入人群"拿走什么/给什么" + 待补查清单 | 引用上面各文件 |
